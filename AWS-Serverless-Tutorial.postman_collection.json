@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "6536f4e1-f4a5-4d96-b1d2-9cb4a6ac8566",
+		"name": "AWS-Serverless-Tutorial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://tgc5de1xgf.execute-api.us-east-1.amazonaws.com/items/12345",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://tgc5de1xgf.execute-api.us-east-1.amazonaws.com/items/12345",
+					"protocol": "https",
+					"host": [
+						"tgc5de1xgf",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"items",
+						"12345"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://tgc5de1xgf.execute-api.us-east-1.amazonaws.com/items/12345",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://tgc5de1xgf.execute-api.us-east-1.amazonaws.com/items/12345",
+					"protocol": "https",
+					"host": [
+						"tgc5de1xgf",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"items",
+						"12345"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://tgc5de1xgf.execute-api.us-east-1.amazonaws.com/items",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"12345\",\n    \"price\": 100.00,\n    \"name\": \"Serverless Tutorial Book\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tgc5de1xgf.execute-api.us-east-1.amazonaws.com/items",
+					"protocol": "https",
+					"host": [
+						"tgc5de1xgf",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
